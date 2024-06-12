@@ -1,0 +1,67 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM762JMCI0ZjXjnzhu37hEi",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/huram481/challenge-questions/blob/main/wap%20to%20sort%20%20the%20list\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "L = [\"Ram\",1,\"Shayam\",2,\"Aman\",3]\n",
+        "print(L)\n",
+        "L = [str(i) for i in L]\n",
+        "L.sort()\n",
+        "\n",
+        "L1 = []\n",
+        "for i in L:\n",
+        "  try:\n",
+        "    L1.append(int(i))\n",
+        "  except:\n",
+        "    L1.append(i)\n",
+        "\n",
+        "L = L1\n",
+        "print(L)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mZPbWz-dtM5u",
+        "outputId": "701b173e-1472-4342-9638-9ee8d06cbd7d"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Ram', 1, 'Shayam', 2, 'Aman', 3]\n",
+            "[1, 2, 3, 'Aman', 'Ram', 'Shayam']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
